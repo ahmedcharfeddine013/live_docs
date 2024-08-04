@@ -9,7 +9,7 @@ export async function POST(request: Request) {
   if (!clerkUser) redirect("/sign-in");
 
   const { id, firstName, lastName, emailAddresses, imageUrl } = clerkUser;
-  // Get the current user from your database
+
   const user = {
     id,
     info: {
